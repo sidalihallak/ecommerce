@@ -8,6 +8,6 @@ if __name__ == '__main__':
     with app.app_context():
         if graph.users.get_all().next is None:
             u = User(username='sidali')
-            u.set_password('malika')
+            u.set_password('password')
             u.save()
     app.run()
